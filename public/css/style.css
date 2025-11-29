@@ -3,6 +3,7 @@
   --font-family: 'Open Sans', sans-serif;
   --primary: #8e44ad;
   --dark: #2c3e50;
+   --danger: #e74c3c;
   --background-light: #ecf0f1;
   --text-color: #444;
   --text-color-light: #fff;
@@ -24,12 +25,48 @@ body {
   background-color: var(--background-light);
 }
 
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
 .container {
   font-size: 1.6rem;
   min-height: 100vh;
   display: flex;
   flex-flow: column;
   color: var(--text-color);
+}
+
+
+/*text */ 
+.text-danger {
+    color: var(--danger);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* button */
+
+.btn {
+  background-color: white;
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  border: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 5px;
+  box-shadow: var(--box-shadow);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text-color-light);
 }
 
 /* header */
@@ -78,4 +115,18 @@ footer {
 
 .todo-container h1 {
   text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.todo-form input {
+  flex: 1;
+  margin-right: 0.5rem;
+  border: var(--border);
+  border-radius: 3px;
+  padding: 10px 15px;
 }
