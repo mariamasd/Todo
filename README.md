@@ -18,7 +18,7 @@ git clone https://github.com/mariamasd/Todo.git
 
 
 # Accéder au dossier du projet
-cd nom-du-projet
+cd Todo
 
 
 # Lancer le serveur PHP
